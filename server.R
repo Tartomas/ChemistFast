@@ -64,7 +64,7 @@ shinyServer(function(input, output) {
           # suppressWarnings(numb<-na.omit(as.numeric(numb)))
           # numb<-gsub('([[:alpha:]])([0-9])','\\1 \\2',formula)
           
-          browser()
+        #  browser()
           
           if(length(mult)<length(elements)){
             orden<-dim(length(mult))
