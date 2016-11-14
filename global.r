@@ -4,6 +4,7 @@ library(shiny)
 #library(shinyjs)
 #library(shinydashboard)
 
-datos<-read.csv("elements.csv")
+#datos<-read.csv("elements.csv")
+load("datos.RData")
 
 
