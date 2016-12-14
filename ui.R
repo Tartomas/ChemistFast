@@ -5,13 +5,16 @@ library(shiny)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("chemistre yie"),
+  titlePanel(
+    h2("ChemisFast 1.0")),
   
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
     sidebarPanel(
       textInput("text", label = h3("Input Nominal Molecular Formula")),
-      actionButton("action", label = "Calculate")
+      actionButton("action", label = "Calculate"),
+      hr(),
+      HTML("Example: O3; CO2; N2CO3. Respect upper and lower letter of tour molecula")
     ),
     
     # Show a plot of the generated distribution
