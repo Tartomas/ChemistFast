@@ -19,8 +19,11 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated distribution
     mainPanel(
-      tableOutput('table'),
-      fluidRow(column(6, verbatimTextOutput("value")))
+      
+      
+      fluidRow(column(6, verbatimTextOutput("value"))),
+      hr(),
+      tableOutput('table')
     )
   )
 ))
